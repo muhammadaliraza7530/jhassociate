@@ -7,8 +7,7 @@ export const Route = createFileRoute("/services")({
       { title: "Services — Coming Soon | JH Associates" },
       {
         name: "description",
-        content:
-          "JH Associates civil construction and interior design services are coming soon.",
+        content: "JH Associates civil construction and interior design services are coming soon.",
       },
       { property: "og:title", content: "Services — Coming Soon | JH Associates" },
       {
@@ -23,5 +22,10 @@ export const Route = createFileRoute("/services")({
 });
 
 function ServicesPage() {
-  return <ComingSoon page="Services" message="Our civil construction and interior design services will be available here soon." />;
+  return (
+    <ComingSoon
+      page="Services"
+      message="Our civil construction and interior design services will be available here soon."
+    />
+  );
 }

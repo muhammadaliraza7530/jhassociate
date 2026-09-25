@@ -30,7 +30,10 @@ export function Header() {
             className="size-14 object-contain transition-transform duration-500 group-hover:scale-105 lg:size-16"
           />
           <span className="hidden text-xs font-bold uppercase leading-tight tracking-[0.22em] sm:block">
-            JH Associates <span className="mt-1 block text-[9px] font-medium text-muted-foreground">Civil & Interior</span>
+            JH Associates{" "}
+            <span className="mt-1 block text-[9px] font-medium text-muted-foreground">
+              Civil & Interior
+            </span>
           </span>
         </Link>
 

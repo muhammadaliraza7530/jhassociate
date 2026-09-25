@@ -7,8 +7,7 @@ export const Route = createFileRoute("/about")({
       { title: "About — Coming Soon | JH Associates" },
       {
         name: "description",
-        content:
-          "The JH Associates company profile is coming soon.",
+        content: "The JH Associates company profile is coming soon.",
       },
       { property: "og:title", content: "About JH Associates — Coming Soon" },
       {
@@ -23,5 +22,10 @@ export const Route = createFileRoute("/about")({
 });
 
 function AboutPage() {
-  return <ComingSoon page="About us" message="Our story, team and approach are being prepared. Please check back soon." />;
+  return (
+    <ComingSoon
+      page="About us"
+      message="Our story, team and approach are being prepared. Please check back soon."
+    />
+  );
 }

@@ -39,7 +39,10 @@ export function Footer() {
           <ul className="mt-5 space-y-3">
             {navLinks.map((l) => (
               <li key={l.to}>
-                <Link to={l.to} className="text-sm text-muted-foreground transition-colors hover:text-primary">
+                <Link
+                  to={l.to}
+                  className="text-sm text-muted-foreground transition-colors hover:text-primary"
+                >
                   {l.label}
                 </Link>
               </li>

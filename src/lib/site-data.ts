@@ -1,24 +1,34 @@
 /**
- * Single source of truth for all site content.
- * Every media file lives in /public and is referenced with an absolute path,
- * so it works identically on the preview, on Lovable hosting and on Vercel.
+ * Single source of truth for JH Associates content.
+ * Grounded directly in live content from https://www.jhassociate.com
  */
 
 export const img = {
   logo: "/logo.webp",
 
-  // Photoreal hero / feature photography
-  spanishVilla: "/homes/hero-spanish.jpg",
-  luxuryVilla: "/homes/hero-villa.jpg",
-  luxuryHouse: "/homes/hero-luxury.jpg",
-  courtyard: "/homes/hero-courtyard.jpg",
+  // Live hero / feature photography from jhassociate.com
+  heroExcellence: "/live/home-3-s3-1.webp",
+  heroArchitecture: "/live/home3-s4-1.webp",
+  heroSustainable: "/live/b127b5691817bafc1b964d810c113ee8.jpg",
+  heroDesign: "/live/home3-s4-2.webp",
+  aboutTeam: "/live/WhatsApp-Image-2025-07-22-at-15.48.11.jpeg",
+  landscapeArch: "/live/home3-s4-3.webp",
+  constructionFeature: "/live/i.webp",
 
-  // Real house photography
-  modernVilla: "/homes/home-1.jpg",
-  classicMansion: "/homes/home-2.jpg",
-  greyClassic: "/homes/home-3.jpg",
-  completedVilla: "/homes/home-4.jpg",
-  brickFront: "/homes/home-5.jpg",
+  // Live project photography
+  saiyudHouse: "/live/work9-604x990.webp",
+  thePresident: "/live/work7-771x583.webp",
+  verdantMetropolis: "/live/work8-771x583.webp",
+  nordicHarmony: "/live/work16-1-851x368.webp",
+  urbanOasis: "/live/work4-621x687.webp",
+  contemporaryVilla: "/live/work3-621x327.webp",
+  commercialSuites: "/live/work12-397x300.webp",
+
+  // Corporate partners / clients
+  partnerKfc: "/live/pngimg.com-kfc_PNG53.png",
+  partnerNandos: "/live/Nandos-Logo-scaled.png",
+  partnerTexasChicken: "/live/Texas_Chicken_logo.png",
+  partner7Eleven: "/live/7-11j.png",
 };
 
 export const showreelUrl = "/video/showreel.mp4";
@@ -28,188 +38,269 @@ export const site = {
   short: "JH",
   fullName: "JH Associates — Civil & Interior",
   tagline: "Civil & Interior",
+  sinceYear: "2020",
   logo: img.logo,
-  address: "DHA Phase 6, Lahore, Punjab, Pakistan",
-  addressShort: "New Super Town, Lahore",
-  email: "aspiringtalks@gmail.com",
-  phone: "0306 0221896",
-  phoneTel: "+923060221896",
-  facebook: "https://facebook.com/AspiringHomes",
-  instagram: "https://instagram.com/aspiringhomesofficial",
-  youtube: "https://youtube.com/@AspiringHomes",
+  address: "DHA Phase 2 near Rahat milk Corner, Karachi, Pakistan",
+  addressShort: "DHA Phase 2, Karachi",
+  email: "info@jhassociate.com",
+  phone: "0313 2204209",
+  phoneAlt: "0333 2137144",
+  phoneTel: "+923132204209",
+  phoneAltTel: "+923332137144",
+  facebook: "https://facebook.com",
+  instagram: "https://instagram.com",
+  linkedin: "https://linkedin.com",
   whatsapp:
-    "https://wa.me/923060221896?text=Hello%20JH%20Associates%2C%20I%20would%20like%20to%20discuss%20a%20construction%20project.",
+    "https://wa.me/923132204209?text=Hello%20JH%20Associates%2C%20I%20would%20like%20to%20discuss%20an%20architectural%20and%20construction%20project.",
   hours: [
-    { day: "Monday to Thursday", time: "9am to 7pm" },
-    { day: "Friday", time: "9am to 12pm & 3pm to 7pm" },
-    { day: "Saturday", time: "9am to 5pm" },
+    { day: "Monday to Saturday", time: "9:00 AM to 7:00 PM" },
     { day: "Sunday", time: "By appointment" },
   ],
 };
 
 export const navLinks = [
   { to: "/", label: "Home" },
-  { to: "/about", label: "About" },
-  { to: "/services", label: "Services" },
-  { to: "/projects", label: "Projects" },
-  { to: "/contact", label: "Contact" },
+  { to: "/about", label: "About Us" },
+  { to: "/services", label: "Our Services" },
+  { to: "/projects", label: "Work Projects" },
+  { to: "/contact", label: "Contact Us" },
 ];
 
 export const heroSlides = [
   {
-    title: "We design and build the home you keep imagining",
+    subtitle: "welcome to JH Associates",
+    title: "Construction Excellence",
     highlight:
-      "Architecture, interiors and full construction — planned, drawn and executed by one team from concept to handover.",
-    image: img.luxuryVilla,
+      "At JH Associates, we bring precision and durability to every project. Our construction expertise ensures that your vision is built on a foundation that stands the test of time, blending innovation with quality craftsmanship.",
+    image: img.heroExcellence,
   },
   {
-    title: "Spanish, classical and modern homes",
+    subtitle: "welcome to JH Associates",
+    title: "Architectural Innovation",
     highlight:
-      "Arched colonnades, terracotta roofs or sharp contemporary lines — we build the language your family loves.",
-    image: img.spanishVilla,
+      "Our architectural designs push boundaries while staying rooted in functionality. From suburban homes to commercial spaces, we craft structures that are both timeless and forward-thinking.",
+    image: img.heroArchitecture,
   },
   {
-    title: "Making quality houses since 2019",
+    subtitle: "welcome to JH Associates",
+    title: "Sustainable Construction Solutions",
     highlight:
-      "From the first 2D plan to the final coat of paint, our designers and site teams turn your plot into a home.",
-    image: img.luxuryHouse,
+      "We prioritize eco-friendly practices in our construction projects. Using sustainable materials and modern techniques, we deliver buildings that are energy-efficient and environmentally responsible.",
+    image: img.heroSustainable,
   },
   {
-    title: "Concept to creation, under one roof",
+    subtitle: "JH Associates",
+    title: "Innovative Design Solutions",
     highlight:
-      "Grey structure, finishing, interiors and 3D visualisation delivered across Lahore, Faisalabad and Sialkot.",
-    image: img.courtyard,
+      "Our design philosophy blends creativity with practicality. We create iconic structures and interiors that resonate with your vision and stand the test of time.",
+    image: img.heroDesign,
   },
 ];
 
 export const stats = [
-  { value: "2019", label: "Building since" },
-  { value: "50+", label: "Homes designed & built" },
-  { value: "3", label: "Cities served" },
+  { value: "2020", label: "Since" },
+  { value: "98%", label: "Happy Customer" },
+  { value: "60+", label: "Projects Delivered" },
+  { value: "20+", label: "Trusted Partners" },
 ];
 
-/** Branded social posts — shown full-frame, never cropped. */
-export const posts = [
-  { image: "/posts/post-1.jpg", title: "Modern Facade Residence", location: "Sialkot", tag: "Coming Soon" },
-  { image: "/posts/post-2.jpg", title: "Crafting Classic Beauty", location: "Lahore", tag: "In Progress" },
-  { image: "/posts/post-3.jpg", title: "Concept to Creation", location: "Lahore", tag: "In Progress" },
-  { image: "/posts/post-4.jpg", title: "Classical Grand Residence", location: "Faisalabad", tag: "Coming Soon" },
-  { image: "/posts/post-5.jpg", title: "Classic Villa Handover", location: "Lahore", tag: "Completed" },
-  { image: "/posts/post-6.jpg", title: "Building Dreams", location: "Lahore", tag: "Under Construction" },
-  { image: "/posts/post-7.jpg", title: "Constructing Excellence", location: "Lahore", tag: "Under Construction" },
-  { image: "/posts/post-8.jpg", title: "The Reflection — Night", location: "Sialkot", tag: "Coming Soon" },
-  { image: "/posts/post-9.jpg", title: "The Reflection — Duplex", location: "Sialkot", tag: "Coming Soon" },
-];
-
-export const videoGallery = [
-  { src: "/videogrally/video1.mp4", poster: img.luxuryVilla, title: "Project Showreel", caption: "Design to handover" },
-  { src: "/videogrally/video2.mp4", poster: img.spanishVilla, title: "Spanish Villa Walkthrough", caption: "Elevation study" },
-  { src: "/videogrally/video3.mp4", poster: img.luxuryHouse, title: "Site Progress Film", caption: "Grey structure" },
-  { src: "/videogrally/video4.mp4", poster: img.courtyard, title: "Interior Reveal", caption: "Finishing stage" },
-];
-
-export const testimonials = [
-  {
-    name: "Ahmed Raza",
-    role: "Homeowner · DHA Phase 6, Lahore",
-    quote:
-      "They handled drawings, material and labour themselves. I never had to chase three different people — the house looks exactly like the 3D they showed me.",
-  },
-  {
-    name: "Sana Iqbal",
-    role: "Homeowner · Citi Housing, Faisalabad",
-    quote:
-      "The elevation work is beautiful and the finishing is clean. Weekly site photos meant I always knew what was happening on my plot.",
-  },
-  {
-    name: "Bilal Hussain",
-    role: "Developer · Sialkot",
-    quote:
-      "Professional team, honest quantities and on-time slabs. We handed them a second duplex before the first one was even finished.",
-  },
-  {
-    name: "Hira Nadeem",
-    role: "Homeowner · Model Town, Lahore",
-    quote:
-      "Interiors were designed and installed by the same team that built the structure, so nothing had to be broken and redone.",
-  },
-  {
-    name: "Usman Tariq",
-    role: "Homeowner · Johar Town, Lahore",
-    quote:
-      "Renovation of a 20-year-old house — new facade, new layout, finished in time and within the range they quoted.",
-  },
-];
+export const companyOverview = {
+  badge: "About JH Associates",
+  heading: "JH Associates — Civil & Interior Excellence Since 2020",
+  body1:
+    "JH Associates is a reliable and forward-thinking construction company, proudly serving since 2020. We are known for delivering high-quality, timely, and innovative construction solutions across residential, commercial, and industrial sectors. With a team of experienced engineers, architects, and field professionals, we are dedicated to completing every project with integrity, expertise, and a commitment to excellence.",
+  body2:
+    "Rooted in Pakistan’s rich cultural heritage, JH Associates is backed by a team of over 40+ experts specializing in innovative, sustainable design and construction for both urban and rural landscapes. We blend traditional aesthetics with modern techniques to create spaces that reflect local identity and meet global standards.",
+  mission:
+    "To deliver design and construction solutions that celebrate Pakistan’s heritage while embracing sustainable and future-ready approaches.",
+  vision:
+    "To shape Pakistan’s built environment with creativity, sustainability, and deep respect for local traditions.",
+  image: img.aboutTeam,
+};
 
 export const services = [
   {
     slug: "architecture",
-    title: "Architecture Design",
-    image: img.luxuryHouse,
-    short: "2D planning, 3D elevation design and complete working drawings for your plot.",
-    body: "2D planning, 3D elevation design and complete working drawings tailored to your plot size and family needs. Every drawing is developed until you approve each detail, so nothing is left to guesswork on site.",
+    title: "Architecture",
+    image: img.thePresident,
+    short:
+      "A beautiful blend of imagination and quality. Fresh thinking, technical expertise, and aesthetic appeal for residential and commercial spaces.",
+    body: "Our architectural services are a beautiful blend of imagination and quality. We design every project with fresh thinking, technical expertise, and aesthetic appeal. Whether it’s a residential residence or a commercial complex, we create structures that inspire.",
   },
   {
     slug: "construction",
     title: "Construction",
-    image: img.brickFront,
-    short: "Grey structure and finishing packages with quality material and trained labour.",
-    body: "Grey structure and finishing packages with quality material, trained labour and transparent site reporting. Our own supervised crews cast columns, beams and slabs strictly to the approved drawings.",
+    image: img.constructionFeature,
+    short:
+      "We see construction as a responsibility. Hard work, honesty, and full attention to engineering durability.",
+    body: "We don't see construction as just work — we see it as a responsibility. We complete every project with hard work, honesty, and full attention. Whether it's structural concrete, brickwork, or turnkey building execution, our craftsmanship stands strong.",
   },
   {
-    slug: "interior",
+    slug: "landscape-architecture",
+    title: "Landscape Architecture",
+    image: img.landscapeArch,
+    short:
+      "Harmonious greenery, courtyard spaces, and natural landscapes designed for modern living.",
+    body: "In today’s hectic life, it is tough to find greenery. With the advance in technology and plans, all you could see is concrete buildings around us and minor nature. We bring sustainable greenery and serene outdoor environments to your property.",
+  },
+  {
+    slug: "architectural-design",
+    title: "Architectural Design",
+    image: img.verdantMetropolis,
+    short:
+      "Comprehensive 2D blueprints, elevation designs, and technical planning tailored to your land.",
+    body: "Transforming concepts into detailed blueprints and technical masterpieces that harmonize space, natural lighting, and structural balance for villas, estates, and corporate spaces.",
+  },
+  {
+    slug: "interior-design",
     title: "Interior Design",
-    image: img.greyClassic,
-    short: "Living, bedroom, kitchen and ceiling design with lighting and furniture detail.",
-    body: "Living, bedroom, kitchen and ceiling design with lighting layouts, furniture detail and execution — designed and installed by the same team that built your structure.",
+    image: img.nordicHarmony,
+    short:
+      "Luxury interior transformations, bespoke cabinetry, ceiling lighting, and curated material palettes.",
+    body: "Interior design that balances elegance and everyday practicality. From executive offices and retail outlets to luxury living rooms and bedrooms, we create bespoke environments tailored to your lifestyle.",
   },
   {
-    slug: "renovation",
-    title: "Renovation",
-    image: img.completedVilla,
-    short: "Facade upgrades, layout changes and full renovation of existing spaces.",
-    body: "Facade upgrades, layout changes and full renovation of existing homes and commercial spaces — re-elevated, remodelled and finished without you leaving the neighbourhood you love.",
+    slug: "3d-house-design",
+    title: "3D House Design",
+    image: img.saiyudHouse,
+    short: "Detailed 3D models and photorealistic visualizations before a single brick is laid.",
+    body: "We create detailed 3D models to bring your vision to life, ensuring every element is planned with precision. Visualize materials, lighting, textures, and spatial flow with total clarity.",
   },
   {
-    slug: "visualisation",
-    title: "3D Visualisation",
-    image: img.classicMansion,
-    short: "Photoreal exterior and interior renders before a single brick is laid.",
-    body: "Photoreal exterior and interior renders so you can see your home before a single brick is laid. Materials, lighting and landscaping are all visualised so approvals are quick and confident.",
+    slug: "business-remodel-planning",
+    title: "Business Remodel Planning",
+    image: img.urbanOasis,
+    short:
+      "Strategic remodel planning for corporate offices and commercial facilities with minimal disruption.",
+    body: "We specialize in transforming business spaces with strategic remodel planning. Our process ensures minimal disruption while delivering modern, functional, and visually appealing results tailored to your brand.",
   },
   {
-    slug: "marketing",
-    title: "Marketing & Media",
-    image: img.spanishVilla,
-    short: "Photography, reels and brand content for developers and builders.",
-    body: "Photography, reels and brand content for developers and builders who want their work seen — the same media team that produces our own project films.",
+    slug: "commercial-remodeling",
+    title: "Commercial Remodeling",
+    image: img.commercialSuites,
+    short:
+      "Optimizing space, enhancing aesthetics, and ensuring durability for high-traffic environments.",
+    body: "Elevate your commercial property with our expert remodeling services. We focus on optimizing space, enhancing aesthetics, and ensuring durability for high-traffic environments.",
   },
 ];
 
-export const registrations = [
-  "Lahore",
-  "Faisalabad",
-  "Sialkot",
-  "Architecture Design",
-  "Interior Design Studio",
-  "Construction Company",
-];
+export const globalPractice = {
+  eyebrow: "Global Practice",
+  title: "Global Expertise in Architectural Design",
+  intro:
+    "JH Associates is dedicated to designing complete environments—exceptional buildings, communities, and spaces—that thrive in unique contexts. Whether it’s a suburban home or a commercial complex, we deliver thoughtful, innovative solutions that make a lasting impact.",
+  commitments: [
+    {
+      title: "Sustainable Commitment",
+      desc: "We Co-Create with you to design what you desire and go above and beyond to deliver what you aspire for.",
+    },
+    {
+      title: "Local Heritage & Global Standards",
+      desc: "Rooted in Pakistan's unique landscapes while applying international engineering and aesthetic benchmarks.",
+    },
+  ],
+  whyChooseUs: [
+    {
+      title: "Innovative Design",
+      desc: "Pushing the boundaries of architecture with creative, forward-thinking designs that are both functional and visually stunning.",
+    },
+    {
+      title: "Client-Centric Approach",
+      desc: "Your vision is our priority. We collaborate closely with clients to ensure every project reflects their unique needs and goals.",
+    },
+    {
+      title: "Award-Winning Excellence",
+      desc: "Recognized for craftsmanship, sustainability, and transformative design impact.",
+    },
+    {
+      title: "High Efficiency",
+      desc: "Our streamlined processes ensure your project is completed on time with minimal revisions, maximizing efficiency.",
+    },
+    {
+      title: "Tailored Solutions",
+      desc: "We provide comprehensive solutions, from planning to execution, ensuring every detail aligns with your goals.",
+    },
+    {
+      title: "Creative Ideas",
+      desc: "From timeless homes to modern commercial spaces, our designs are inspired by your vision and our passion for innovation.",
+    },
+  ],
+};
 
 export const process = [
-  { step: "01", title: "Consultation", body: "We discuss your plot, budget and requirements — in person or on WhatsApp." },
-  { step: "02", title: "Design", body: "Floor plans and 3D elevations are developed until you approve every detail." },
-  { step: "03", title: "Execution", body: "Grey structure and finishing delivered by our own supervised site teams." },
-  { step: "04", title: "Handover", body: "Final finishing, cleaning and a walk-through before your keys are handed over." },
+  {
+    step: "01",
+    title: "Strategic Definition",
+    body: "We begin by understanding your vision and goals. Our team gathers data, assesses needs, and defines the project scope to set a solid foundation.",
+    bullets: [
+      "Aligning your vision with Pakistan’s unique architectural needs",
+      "Incorporating local materials and cultural elements",
+      "Setting a roadmap for sustainable design",
+    ],
+  },
+  {
+    step: "02",
+    title: "Preparation and Briefing",
+    body: "We collaborate with you to prepare a detailed brief, outlining objectives, budget, and timelines, ensuring alignment from the start.",
+    bullets: [
+      "Detailed site analysis for Pakistan’s diverse landscapes",
+      "Budget planning tailored to local market rates",
+      "Ensuring compliance with regional regulations",
+    ],
+  },
+  {
+    step: "03",
+    title: "Concept Design",
+    body: "Our designers craft innovative concepts, blending creativity with practicality, and present initial designs for your feedback.",
+    bullets: [
+      "Fusing modern design with traditional Pakistani aesthetics",
+      "Using 3D visualizations for better understanding",
+      "Prioritizing client feedback for personalized results",
+    ],
+  },
+  {
+    step: "04",
+    title: "Planning Submission",
+    body: "We finalize plans, handle permits, and submit designs for approval, ensuring a seamless transition to construction.",
+    bullets: [
+      "Coordinating with local authorities for approvals",
+      "Finalizing eco-friendly construction strategies",
+      "Preparing a timeline for efficient project execution",
+    ],
+  },
 ];
 
-export const galleryImages = [
-  img.luxuryVilla,
-  img.spanishVilla,
-  img.luxuryHouse,
-  img.courtyard,
-  img.modernVilla,
-  img.classicMansion,
-  img.greyClassic,
-  img.completedVilla,
-  img.brickFront,
+export const clientPartners = [
+  { name: "KFC", logo: img.partnerKfc },
+  { name: "Nando's", logo: img.partnerNandos },
+  { name: "Texas Chicken", logo: img.partnerTexasChicken },
+  { name: "7-Eleven", logo: img.partner7Eleven },
+];
+
+export const testimonials = [
+  {
+    name: "Ayesha Khan",
+    role: "Modern Villa Design · Karachi",
+    quote:
+      "JH Associates turned my dream villa into a reality with their passionate approach. Their dedication to detail is truly inspiring!",
+  },
+  {
+    name: "Imran Ahmed",
+    role: "Office Renovation · Karachi",
+    quote:
+      "The team’s passion for architecture shines through in every aspect of their work. My office space now reflects my vision perfectly!",
+  },
+  {
+    name: "Fatima Malik",
+    role: "Sustainable Home Construction · Karachi",
+    quote:
+      "I was amazed by the passion JH Associates brought to my eco-friendly home. Their creativity and commitment are unmatched!",
+  },
+];
+
+export const quickConsultOptions = [
+  "I Want To Remodel",
+  "I Want To New Build",
+  "I Need To Meet In Person",
+  "Download Brochure",
 ];

@@ -220,28 +220,59 @@
 /* ---------------- Premium interaction layer ---------------- */
 
 @keyframes btn-nudge {
-  0%, 88%, 100% { transform: translateY(0) }
-  91% { transform: translateY(-3px) }
-  94% { transform: translateY(2px) }
-  97% { transform: translateY(-1px) }
+  0%,
+  88%,
+  100% {
+    transform: translateY(0);
+  }
+  91% {
+    transform: translateY(-3px);
+  }
+  94% {
+    transform: translateY(2px);
+  }
+  97% {
+    transform: translateY(-1px);
+  }
 }
 @keyframes hero-rise {
-  0%   { opacity: 0; transform: translateY(70%) scaleY(1.25); filter: blur(14px) }
-  55%  { opacity: 1; filter: blur(0) }
-  100% { opacity: 1; transform: none; filter: blur(0) }
+  0% {
+    opacity: 0;
+    transform: translateY(70%) scaleY(1.25);
+    filter: blur(14px);
+  }
+  55% {
+    opacity: 1;
+    filter: blur(0);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+    filter: blur(0);
+  }
 }
 @keyframes badge-ring {
-  0%   { box-shadow: 0 0 0 0 color-mix(in oklab, var(--primary) 55%, transparent) }
-  100% { box-shadow: 0 0 0 16px transparent }
+  0% {
+    box-shadow: 0 0 0 0 color-mix(in oklab, var(--primary) 55%, transparent);
+  }
+  100% {
+    box-shadow: 0 0 0 16px transparent;
+  }
 }
 @keyframes sheen {
-  0%   { transform: translateX(-130%) skewX(-18deg) }
-  100% { transform: translateX(230%) skewX(-18deg) }
+  0% {
+    transform: translateX(-130%) skewX(-18deg);
+  }
+  100% {
+    transform: translateX(230%) skewX(-18deg);
+  }
 }
 
 @utility btn-shake {
   animation: btn-nudge 4.5s ease-in-out infinite;
-  &:hover { animation-play-state: paused }
+  &:hover {
+    animation-play-state: paused;
+  }
 }
 
 @utility hero-rise {
@@ -259,7 +290,9 @@
     border-color 0.45s,
     transform 0.45s cubic-bezier(0.22, 1, 0.36, 1);
   & img,
-  & video { border-radius: inherit }
+  & video {
+    border-radius: inherit;
+  }
   &::before {
     content: "";
     position: absolute;
@@ -281,7 +314,8 @@
     mask-composite: exclude;
     padding: 1px;
   }
-  &:hover, &.is-lit {
+  &:hover,
+  &.is-lit {
     transform: translateY(-4px);
     border-color: color-mix(in oklab, var(--primary) 70%, transparent);
     box-shadow:
@@ -289,7 +323,10 @@
       0 18px 44px -18px color-mix(in oklab, var(--primary) 45%, transparent),
       inset 0 0 26px color-mix(in oklab, var(--primary) 7%, transparent);
   }
-  &:hover::before, &.is-lit::before { opacity: 1 }
+  &:hover::before,
+  &.is-lit::before {
+    opacity: 1;
+  }
 }
 
 @utility sheen-on-hover {
@@ -300,17 +337,29 @@
     position: absolute;
     inset: 0;
     pointer-events: none;
-    background: linear-gradient(90deg, transparent, color-mix(in oklab, var(--primary) 26%, transparent), transparent);
+    background: linear-gradient(
+      90deg,
+      transparent,
+      color-mix(in oklab, var(--primary) 26%, transparent),
+      transparent
+    );
     transform: translateX(-130%) skewX(-18deg);
   }
-  &:hover::after { animation: sheen 0.9s ease-out }
+  &:hover::after {
+    animation: sheen 0.9s ease-out;
+  }
 }
 
 @utility reg-chip {
   position: relative;
   overflow: hidden;
-  transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1), border-color 0.35s, box-shadow 0.35s, color 0.35s;
-  &:hover, &.is-on {
+  transition:
+    transform 0.35s cubic-bezier(0.22, 1, 0.36, 1),
+    border-color 0.35s,
+    box-shadow 0.35s,
+    color 0.35s;
+  &:hover,
+  &.is-on {
     transform: translateY(-3px) scale(1.04);
     border-color: var(--primary);
     color: var(--primary);
@@ -318,15 +367,25 @@
       0 0 0 1px color-mix(in oklab, var(--primary) 45%, transparent),
       0 0 24px color-mix(in oklab, var(--primary) 35%, transparent);
   }
-  &.is-on { animation: badge-ring 0.7s ease-out }
+  &.is-on {
+    animation: badge-ring 0.7s ease-out;
+  }
   &::after {
     content: "";
     position: absolute;
     inset: 0;
-    background: linear-gradient(90deg, transparent, color-mix(in oklab, var(--primary) 32%, transparent), transparent);
+    background: linear-gradient(
+      90deg,
+      transparent,
+      color-mix(in oklab, var(--primary) 32%, transparent),
+      transparent
+    );
     transform: translateX(-130%) skewX(-18deg);
   }
-  &:hover::after, &.is-on::after { animation: sheen 0.8s ease-out }
+  &:hover::after,
+  &.is-on::after {
+    animation: sheen 0.8s ease-out;
+  }
 }
 
 /* Legacy utilities still used by inner pages */
@@ -353,16 +412,28 @@
   color: transparent;
   -webkit-text-stroke: 1px var(--foreground);
 }
-@utility hairline { border-top: 1px solid var(--color-border) }
+@utility hairline {
+  border-top: 1px solid var(--color-border);
+}
 
 @keyframes letter-in {
-  0%   { opacity: 0; transform: translateY(90%) rotateX(-70deg); filter: blur(10px) }
-  100% { opacity: 1; transform: none; filter: blur(0) }
+  0% {
+    opacity: 0;
+    transform: translateY(90%) rotateX(-70deg);
+    filter: blur(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+    filter: blur(0);
+  }
 }
 .letter-in {
   animation: letter-in 0.95s cubic-bezier(0.16, 1, 0.3, 1) both;
   transform-origin: 50% 100%;
 }
 @media (prefers-reduced-motion: reduce) {
-  .letter-in { animation: none }
+  .letter-in {
+    animation: none;
+  }
 }

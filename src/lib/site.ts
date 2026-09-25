@@ -1,24 +1,31 @@
-import { img, showreelUrl as reelUrl, process as processSteps, services as serviceList } from "@/lib/site-data";
+import {
+  img,
+  showreelUrl as reelUrl,
+  process as processSteps,
+  services as serviceList,
+  site,
+} from "@/lib/site-data";
 
 export const logoUrl = img.logo;
 export const showreelUrl = reelUrl;
 
 export const company = {
-  name: "JH Associates",
-  tagline: "Civil · Interior",
-  since: "Civil & Interior Professionals",
-  phoneDisplay: "0306 0221896",
-  phoneTel: "+923060221896",
-  whatsapp:
-    "https://wa.me/923060221896?text=Hello%20JH%20Associates%2C%20I%20would%20like%20to%20discuss%20a%20construction%20project.",
-  email: "aspiringtalks@gmail.com",
-  addressShort: "New Super Town, Lahore",
-  address: "DHA Phase 6, Lahore, Punjab, Pakistan",
-  hours: "Mon–Sat, 9am to 7pm",
+  name: site.name,
+  tagline: site.tagline,
+  since: `Since ${site.sinceYear}`,
+  phoneDisplay: site.phone,
+  phoneAltDisplay: site.phoneAlt,
+  phoneTel: site.phoneTel,
+  phoneAltTel: site.phoneAltTel,
+  whatsapp: site.whatsapp,
+  email: site.email,
+  addressShort: site.addressShort,
+  address: site.address,
+  hours: "Mon–Sat, 9:00 AM to 7:00 PM",
   socials: [
-    { label: "Instagram", href: "https://instagram.com/aspiringhomesofficial" },
-    { label: "Facebook", href: "https://facebook.com/AspiringHomes" },
-    { label: "YouTube", href: "https://youtube.com/@AspiringHomes" },
+    { label: "Facebook", href: site.facebook },
+    { label: "Instagram", href: site.instagram },
+    { label: "LinkedIn", href: site.linkedin },
   ],
 };
 
@@ -27,7 +34,7 @@ export type Project = {
   title: string;
   location: string;
   status: "Completed" | "Under Construction" | "Upcoming";
-  category: "Modern" | "Classic" | "Spanish" | "Grey Structure";
+  category: "Architecture" | "Interior" | "Civil" | "Commercial";
   image: string;
   gallery: string[];
   blurb: string;
@@ -35,70 +42,81 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    slug: "the-reflection-sialkot",
-    title: "The Reflection — Duplex",
-    location: "Sialkot",
-    status: "Upcoming",
-    category: "Modern",
-    image: img.luxuryVilla,
-    gallery: [img.luxuryVilla, img.luxuryHouse, img.modernVilla],
-    blurb:
-      "A contemporary duplex with a travertine-and-graphite elevation, layered facade lighting and glass balustrades.",
-  },
-  {
-    slug: "spanish-courtyard-villa",
-    title: "Spanish Courtyard Villa",
-    location: "Lahore",
-    status: "Under Construction",
-    category: "Spanish",
-    image: img.spanishVilla,
-    gallery: [img.spanishVilla, img.courtyard, img.classicMansion],
-    blurb:
-      "White stucco walls, terracotta roof tiles and an arched colonnade wrapped around a private landscaped courtyard.",
-  },
-  {
-    slug: "classical-grand-residence",
-    title: "Classical Grand Residence",
-    location: "Citi Housing, Faisalabad",
-    status: "Upcoming",
-    category: "Classic",
-    image: img.classicMansion,
-    gallery: [img.classicMansion, img.courtyard, img.completedVilla],
-    blurb:
-      "Columns, arched glazing and a double-height entrance foyer designed for a landmark corner plot.",
-  },
-  {
-    slug: "modern-luxury-house",
-    title: "Modern Luxury House",
-    location: "Lahore",
+    slug: "saiyud-house",
+    title: "Saiyud House",
+    location: "DHA Karachi",
     status: "Completed",
-    category: "Modern",
-    image: img.luxuryHouse,
-    gallery: [img.luxuryHouse, img.modernVilla, img.brickFront],
+    category: "Architecture",
+    image: img.saiyudHouse,
+    gallery: [img.saiyudHouse, img.verdantMetropolis, img.contemporaryVilla],
     blurb:
-      "Travertine and dark stone facade with a double-height entrance, black-framed glazing and a glass balcony.",
+      "A masterwork of architecture and civil engineering showcasing high verticality, curated lighting, and modern stone textures.",
   },
   {
-    slug: "grey-modern-residence",
-    title: "Grey Modern Residence",
-    location: "Lahore",
+    slug: "the-president",
+    title: "The President",
+    location: "Clifton, Karachi",
     status: "Completed",
-    category: "Modern",
-    image: img.modernVilla,
-    gallery: [img.modernVilla, img.greyClassic, img.brickFront],
+    category: "Architecture",
+    image: img.thePresident,
+    gallery: [img.thePresident, img.contemporaryVilla, img.verdantMetropolis],
     blurb:
-      "A crisp grey-and-black elevation with full-height glazing, a covered carport and a minimal front garden.",
+      "Iconic architectural landmark designed with refined symmetry, bold structural proportions, and luxurious finishes.",
   },
   {
-    slug: "corner-plot-residence",
-    title: "Corner Plot Residence",
-    location: "Sialkot",
-    status: "Under Construction",
-    category: "Modern",
-    image: img.brickFront,
-    gallery: [img.brickFront, img.greyClassic, img.luxuryHouse],
+    slug: "verdant-metropolis-residence",
+    title: "Verdant Metropolis Residence",
+    location: "DHA Phase 2, Karachi",
+    status: "Completed",
+    category: "Architecture",
+    image: img.verdantMetropolis,
+    gallery: [img.verdantMetropolis, img.thePresident, img.nordicHarmony],
     blurb:
-      "Two-storey corner house with large glass panels, a shaded carport and a warm stone-and-graphite palette.",
+      "Sustainable urban residence integrating lush courtyard elements, energy-efficient insulation, and custom exterior louvers.",
+  },
+  {
+    slug: "nordic-harmony-residences",
+    title: "Nordic Harmony Residences",
+    location: "Bahria Town, Karachi",
+    status: "Completed",
+    category: "Architecture",
+    image: img.nordicHarmony,
+    gallery: [img.nordicHarmony, img.urbanOasis, img.contemporaryVilla],
+    blurb:
+      "Minimalist architectural elegance emphasizing clean linear geometries, open-concept spaces, and natural daylight.",
+  },
+  {
+    slug: "urban-oasis-revitalization",
+    title: "Urban Oasis Revitalization",
+    location: "PECHS, Karachi",
+    status: "Under Construction",
+    category: "Commercial",
+    image: img.urbanOasis,
+    gallery: [img.urbanOasis, img.commercialSuites, img.saiyudHouse],
+    blurb:
+      "Adaptive commercial space remodel optimizing circulation, contemporary facade restoration, and acoustic interior design.",
+  },
+  {
+    slug: "contemporary-luxury-villa",
+    title: "Contemporary Luxury Villa",
+    location: "DHA Phase 6, Karachi",
+    status: "Completed",
+    category: "Architecture",
+    image: img.contemporaryVilla,
+    gallery: [img.contemporaryVilla, img.saiyudHouse, img.thePresident],
+    blurb:
+      "Bespoke private villa featuring double-height ceiling voids, floor-to-ceiling glass systems, and custom interior joinery.",
+  },
+  {
+    slug: "commercial-executive-suites",
+    title: "Commercial Executive Suites",
+    location: "Shahrah-e-Faisal, Karachi",
+    status: "Completed",
+    category: "Commercial",
+    image: img.commercialSuites,
+    gallery: [img.commercialSuites, img.urbanOasis, img.nordicHarmony],
+    blurb:
+      "Turnkey executive corporate offices built for high performance, high-traffic durability, and executive luxury aesthetics.",
   },
 ];
 

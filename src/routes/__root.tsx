@@ -16,8 +16,6 @@ import { Footer } from "@/components/Footer";
 import { GlowLayer } from "@/components/GlowLayer";
 import { WhatsAppFloat } from "@/components/WhatsAppFloat";
 
-
-
 function NotFoundComponent() {
   return (
     <div className="flex min-h-screen items-center justify-center bg-background px-4">
@@ -90,6 +88,11 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       },
       { name: "author", content: "JH Associates" },
       { property: "og:type", content: "website" },
+      { property: "og:title", content: "JH Associates — Civil & Interior" },
+      {
+        property: "og:description",
+        content: "Civil construction and interior design by JH Associates.",
+      },
       { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [
@@ -146,5 +149,3 @@ function RootComponent() {
     </QueryClientProvider>
   );
 }
-
-

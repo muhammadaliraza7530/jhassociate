@@ -10,7 +10,12 @@ export const Route = createFileRoute("/projects/$slug")({
   },
   head: ({ loaderData }) => {
     if (!loaderData) {
-      return { meta: [{ title: "Project not found — JH Associates" }, { name: "robots", content: "noindex" }] };
+      return {
+        meta: [
+          { title: "Project not found — JH Associates" },
+          { name: "robots", content: "noindex" },
+        ],
+      };
     }
     const { project } = loaderData;
     const title = `${project.title} — Coming Soon | JH Associates`;
@@ -30,5 +35,10 @@ export const Route = createFileRoute("/projects/$slug")({
 
 function ProjectDetail() {
   const { project } = Route.useLoaderData();
-  return <ComingSoon page={project.title} message="This project story and gallery are being prepared. Please check back soon." />;
+  return (
+    <ComingSoon
+      page={project.title}
+      message="This project story and gallery are being prepared. Please check back soon."
+    />
+  );
 }

@@ -1,0 +1,6 @@
+{
+  "name": "JH Associates — Civil & Interior",
+  "description": "Civil construction and interior design by JH Associates.",
+  "requestFramePermissions": [],
+  "capabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
