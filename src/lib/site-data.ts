@@ -124,7 +124,7 @@ export const services = [
     title: "Architecture",
     image: img.thePresident,
     short:
-      "A beautiful blend of imagination and quality. Fresh thinking, technical expertise, and aesthetic appeal for residential and commercial spaces.",
+      "A blend of imagination and engineering creating timeless residential and commercial structures.",
     body: "Our architectural services are a beautiful blend of imagination and quality. We design every project with fresh thinking, technical expertise, and aesthetic appeal. Whether it’s a residential residence or a commercial complex, we create structures that inspire.",
   },
   {
@@ -132,7 +132,7 @@ export const services = [
     title: "Construction",
     image: img.constructionFeature,
     short:
-      "We see construction as a responsibility. Hard work, honesty, and full attention to engineering durability.",
+      "Precision civil construction executed with structural durability and premium material integrity.",
     body: "We don't see construction as just work — we see it as a responsibility. We complete every project with hard work, honesty, and full attention. Whether it's structural concrete, brickwork, or turnkey building execution, our craftsmanship stands strong.",
   },
   {
@@ -140,7 +140,7 @@ export const services = [
     title: "Landscape Architecture",
     image: img.landscapeArch,
     short:
-      "Harmonious greenery, courtyard spaces, and natural landscapes designed for modern living.",
+      "Harmonious green courtyards and serene outdoor spaces designed for contemporary living.",
     body: "In today’s hectic life, it is tough to find greenery. With the advance in technology and plans, all you could see is concrete buildings around us and minor nature. We bring sustainable greenery and serene outdoor environments to your property.",
   },
   {
@@ -148,7 +148,7 @@ export const services = [
     title: "Architectural Design",
     image: img.verdantMetropolis,
     short:
-      "Comprehensive 2D blueprints, elevation designs, and technical planning tailored to your land.",
+      "Detailed 2D blueprints, elevation designs, and technical planning tailored to your plot.",
     body: "Transforming concepts into detailed blueprints and technical masterpieces that harmonize space, natural lighting, and structural balance for villas, estates, and corporate spaces.",
   },
   {
@@ -156,14 +156,14 @@ export const services = [
     title: "Interior Design",
     image: img.nordicHarmony,
     short:
-      "Luxury interior transformations, bespoke cabinetry, ceiling lighting, and curated material palettes.",
+      "Bespoke luxury interiors, custom joinery, and lighting palettes crafted for daily comfort.",
     body: "Interior design that balances elegance and everyday practicality. From executive offices and retail outlets to luxury living rooms and bedrooms, we create bespoke environments tailored to your lifestyle.",
   },
   {
     slug: "3d-house-design",
     title: "3D House Design",
     image: img.saiyudHouse,
-    short: "Detailed 3D models and photorealistic visualizations before a single brick is laid.",
+    short: "Detailed 3D models and photorealistic walkthroughs before a single brick is laid.",
     body: "We create detailed 3D models to bring your vision to life, ensuring every element is planned with precision. Visualize materials, lighting, textures, and spatial flow with total clarity.",
   },
   {
@@ -171,7 +171,7 @@ export const services = [
     title: "Business Remodel Planning",
     image: img.urbanOasis,
     short:
-      "Strategic remodel planning for corporate offices and commercial facilities with minimal disruption.",
+      "Strategic corporate remodel planning with minimal disruption to daily office operations.",
     body: "We specialize in transforming business spaces with strategic remodel planning. Our process ensures minimal disruption while delivering modern, functional, and visually appealing results tailored to your brand.",
   },
   {
@@ -179,7 +179,7 @@ export const services = [
     title: "Commercial Remodeling",
     image: img.commercialSuites,
     short:
-      "Optimizing space, enhancing aesthetics, and ensuring durability for high-traffic environments.",
+      "Optimizing commercial space, brand aesthetics, and durability for high-traffic environments.",
     body: "Elevate your commercial property with our expert remodeling services. We focus on optimizing space, enhancing aesthetics, and ensuring durability for high-traffic environments.",
   },
 ];
@@ -303,4 +303,61 @@ export const quickConsultOptions = [
   "I Want To New Build",
   "I Need To Meet In Person",
   "Download Brochure",
+];
+
+export const posts = [
+  {
+    image: "/posts/post-1.jpg",
+    title: "Structural Finishing & Architectural Detailing",
+    location: "DHA Phase 2, Karachi",
+    tag: "Civil & Structure",
+  },
+  {
+    image: "/posts/post-2.jpg",
+    title: "Modern Minimalist Elevation & Villa Design",
+    location: "Karachi, Pakistan",
+    tag: "Architecture",
+  },
+  {
+    image: "/posts/post-3.jpg",
+    title: "Luxury Interior Spaces & Bespoke Joinery",
+    location: "Clifton, Karachi",
+    tag: "Interior",
+  },
+  {
+    image: "/posts/post-4.jpg",
+    title: "Commercial Facade & Executive Suites",
+    location: "Karachi Central",
+    tag: "Commercial",
+  },
+  {
+    image: "/posts/post-5.jpg",
+    title: "High-End Residential Architecture",
+    location: "DHA Phase 6, Karachi",
+    tag: "Residential",
+  },
+  {
+    image: "/posts/post-6.jpg",
+    title: "Turnkey Site Execution & Supervision",
+    location: "Karachi On-Site",
+    tag: "Construction",
+  },
+  {
+    image: "/posts/post-7.jpg",
+    title: "Contemporary Villa Living & Ambient Light",
+    location: "Karachi",
+    tag: "Architecture",
+  },
+  {
+    image: "/posts/post-8.jpg",
+    title: "Premium Finishings & Architectural Harmony",
+    location: "Interior Fitout",
+    tag: "Civil & Interior",
+  },
+  {
+    image: "/posts/post-9.jpg",
+    title: "Landscape Architecture & Serene Courtyard",
+    location: "Karachi",
+    tag: "Landscape",
+  },
 ];

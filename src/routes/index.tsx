@@ -28,6 +28,7 @@ import { projects } from "@/lib/site";
 import { Counter, Reveal, SectionHeading } from "@/components/ui-bits";
 import { AutoScroller } from "@/components/AutoScroller";
 import { TestimonialsRail } from "@/components/Testimonials";
+import { PostsRail } from "@/components/PostsRail";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -263,47 +264,51 @@ function HomePage() {
       </section>
 
       {/* Comprehensive Services We Offer */}
-      <section className="border-t border-border bg-card/25 py-20 lg:py-28">
+      <section className="overflow-hidden border-t border-border bg-card/25 py-20 lg:py-28">
         <div className="mx-auto max-w-7xl px-5 lg:px-8">
           <SectionHeading
             eyebrow="Comprehensive Services"
             title="Services We Offer"
             intro="JH Associates offers comprehensive architectural and construction services from concept to completion, covering pre-design, design, and post-design phases."
           />
+        </div>
 
-          <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-            {services.map((s, i) => (
-              <Reveal key={s.slug} delay={i * 60} className="h-full">
-                <article className="lit-panel group flex h-full flex-col overflow-hidden rounded-xl border border-border/80 bg-card transition-all duration-300 hover:border-primary/50 hover:shadow-xl">
-                  <div className="relative aspect-16/10 w-full overflow-hidden">
-                    <img
-                      src={s.image}
-                      alt={s.title}
-                      loading="lazy"
-                      className="size-full object-cover transition-transform duration-700 group-hover:scale-105"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent" />
+        <div className="mt-12">
+          <AutoScroller speed={260}>
+            {services.map((s) => (
+              <article
+                key={s.slug}
+                className="lit-panel group flex h-full w-[290px] shrink-0 flex-col overflow-hidden rounded-xl border border-border/80 bg-card transition-all duration-300 hover:border-primary/50 hover:shadow-xl sm:w-[360px]"
+              >
+                <div className="relative aspect-16/10 w-full overflow-hidden">
+                  <img
+                    src={s.image}
+                    alt={s.title}
+                    loading="lazy"
+                    draggable={false}
+                    className="size-full object-cover transition-transform duration-700 group-hover:scale-105"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent" />
+                </div>
+                <div className="flex flex-1 flex-col p-6">
+                  <h3 className="text-lg font-bold text-foreground transition-colors group-hover:text-primary">
+                    {s.title}
+                  </h3>
+                  <p className="mt-2.5 line-clamp-2 h-10 text-xs leading-relaxed text-muted-foreground sm:text-sm">
+                    {s.short}
+                  </p>
+                  <div className="mt-5 border-t border-border/60 pt-4">
+                    <Link
+                      to="/services"
+                      className="inline-flex items-center gap-1.5 text-xs font-semibold uppercase tracking-[0.14em] text-primary transition-colors hover:text-accent"
+                    >
+                      Find Out More <ArrowRight className="size-3.5" />
+                    </Link>
                   </div>
-                  <div className="flex flex-1 flex-col p-6">
-                    <h3 className="text-lg font-bold text-foreground transition-colors group-hover:text-primary">
-                      {s.title}
-                    </h3>
-                    <p className="mt-3 flex-1 text-xs leading-relaxed text-muted-foreground sm:text-sm">
-                      {s.short}
-                    </p>
-                    <div className="mt-5 border-t border-border/60 pt-4">
-                      <Link
-                        to="/services"
-                        className="inline-flex items-center gap-1.5 text-xs font-semibold uppercase tracking-[0.14em] text-primary transition-colors hover:text-accent"
-                      >
-                        Find Out More <ArrowRight className="size-3.5" />
-                      </Link>
-                    </div>
-                  </div>
-                </article>
-              </Reveal>
+                </div>
+              </article>
             ))}
-          </div>
+          </AutoScroller>
         </div>
       </section>
 
@@ -453,8 +458,22 @@ function HomePage() {
         </div>
       </section>
 
+      {/* Latest Posts & Visual Updates (path: /public/posts) */}
+      <section className="overflow-hidden border-t border-border bg-card/25 py-20 lg:py-28">
+        <div className="mx-auto max-w-7xl px-5 lg:px-8">
+          <SectionHeading
+            eyebrow="Visual Updates"
+            title="Our Latest Posts"
+            intro="Explore our recent site updates, architectural spotlights, and ongoing civil craftsmanship across Karachi."
+          />
+        </div>
+        <div className="mt-12">
+          <PostsRail />
+        </div>
+      </section>
+
       {/* Testimonials */}
-      <section className="overflow-hidden py-20 lg:py-28">
+      <section className="overflow-hidden border-t border-border py-20 lg:py-28">
         <div className="mx-auto max-w-7xl px-5 lg:px-8">
           <SectionHeading
             eyebrow="What Our Clients Say"

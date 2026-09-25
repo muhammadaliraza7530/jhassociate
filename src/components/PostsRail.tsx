@@ -11,7 +11,7 @@ export function PostsRail() {
       {posts.map((p, i) => (
         <article
           key={`${p.image}-${i}`}
-          className="lit-panel flex h-full w-[260px] shrink-0 flex-col overflow-hidden bg-card sm:w-[320px]"
+          className="lit-panel flex h-full w-[260px] shrink-0 flex-col overflow-hidden rounded-xl border border-border/80 bg-card transition-all duration-300 hover:border-primary/50 hover:shadow-xl sm:w-[320px]"
         >
           <div className="aspect-[4/5] w-full overflow-hidden bg-black/60">
             <img
