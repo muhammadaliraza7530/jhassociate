@@ -76,7 +76,7 @@ export function VideoPlayer({
         className,
       )}
     >
-      <div className="relative inline-block overflow-hidden rounded-3xl border-2 border-orange-500/80 shadow-2xl">
+      <div className="relative inline-block overflow-hidden rounded-3xl border-2 border-primary/70 shadow-2xl">
         <video
           ref={videoRef}
           src={src}

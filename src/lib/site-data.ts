@@ -49,6 +49,7 @@ export const site = {
   phoneAltTel: "+923332137144",
   facebook: "https://facebook.com",
   instagram: "https://instagram.com",
+  youtube: "https://youtube.com",
   linkedin: "https://linkedin.com",
   whatsapp:
     "https://wa.me/923132204209?text=Hello%20JH%20Associates%2C%20I%20would%20like%20to%20discuss%20an%20architectural%20and%20construction%20project.",
