@@ -27,7 +27,7 @@ export function Header() {
           <img
             src={site.logo}
             alt="JH Associates logo"
-            className="size-14 object-contain transition-transform duration-500 group-hover:scale-105 lg:size-16"
+            className="size-14 rounded-xl border border-border/70 bg-card/80 object-cover p-1 shadow-sm transition-transform duration-500 group-hover:scale-105 sm:size-14 lg:size-16"
           />
           <span className="hidden text-xs font-bold uppercase leading-tight tracking-[0.22em] sm:block">
             JH Associates{" "}

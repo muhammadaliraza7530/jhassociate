@@ -24,11 +24,12 @@ import {
   clientPartners,
   quickConsultOptions,
 } from "@/lib/site-data";
-import { projects } from "@/lib/site";
+import { projects, showreelUrl } from "@/lib/site";
 import { Counter, Reveal, SectionHeading } from "@/components/ui-bits";
 import { AutoScroller } from "@/components/AutoScroller";
 import { TestimonialsRail } from "@/components/Testimonials";
 import { PostsRail } from "@/components/PostsRail";
+import { VideoPlayer } from "@/components/VideoPlayer";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -177,6 +178,20 @@ function HomePage() {
               </p>
             </Reveal>
           ))}
+        </div>
+      </section>
+
+      {/* Showreel Section */}
+      <section className="border-y border-border bg-card/30 py-20 lg:py-28">
+        <div className="mx-auto max-w-6xl px-5 lg:px-8">
+          <SectionHeading
+            eyebrow="Showreel"
+            title="A Quick Look at Our Craft"
+            intro="See our design philosophy and construction discipline come to life in a short glimpse of the work, teams, and spaces we build with precision."
+          />
+          <div className="mt-10">
+            <VideoPlayer src={showreelUrl} poster={companyOverview.image} className="mt-2" />
+          </div>
         </div>
       </section>
 

@@ -4,7 +4,7 @@
  */
 
 export const img = {
-  logo: "/logo.webp",
+  logo: "/logo.jpeg",
 
   // Live hero / feature photography from jhassociate.com
   heroExcellence: "/live/home-3-s3-1.webp",
@@ -307,55 +307,55 @@ export const quickConsultOptions = [
 
 export const posts = [
   {
-    image: "/posts/post-1.jpg",
+    image: "/posts/post1.jpeg",
     title: "Structural Finishing & Architectural Detailing",
     location: "DHA Phase 2, Karachi",
     tag: "Civil & Structure",
   },
   {
-    image: "/posts/post-2.jpg",
+    image: "/posts/post2.jpeg",
     title: "Modern Minimalist Elevation & Villa Design",
     location: "Karachi, Pakistan",
     tag: "Architecture",
   },
   {
-    image: "/posts/post-3.jpg",
+    image: "/posts/post3.jpeg",
     title: "Luxury Interior Spaces & Bespoke Joinery",
     location: "Clifton, Karachi",
     tag: "Interior",
   },
   {
-    image: "/posts/post-4.jpg",
+    image: "/posts/post4.jpeg",
     title: "Commercial Facade & Executive Suites",
     location: "Karachi Central",
     tag: "Commercial",
   },
   {
-    image: "/posts/post-5.jpg",
+    image: "/posts/post5.jpeg",
     title: "High-End Residential Architecture",
     location: "DHA Phase 6, Karachi",
     tag: "Residential",
   },
   {
-    image: "/posts/post-6.jpg",
+    image: "/posts/post1.jpeg",
     title: "Turnkey Site Execution & Supervision",
     location: "Karachi On-Site",
     tag: "Construction",
   },
   {
-    image: "/posts/post-7.jpg",
+    image: "/posts/post2.jpeg",
     title: "Contemporary Villa Living & Ambient Light",
     location: "Karachi",
     tag: "Architecture",
   },
   {
-    image: "/posts/post-8.jpg",
+    image: "/posts/post3.jpeg",
     title: "Premium Finishings & Architectural Harmony",
     location: "Interior Fitout",
     tag: "Civil & Interior",
   },
   {
-    image: "/posts/post-9.jpg",
+    image: "/posts/post4.jpeg",
     title: "Landscape Architecture & Serene Courtyard",
     location: "Karachi",
     tag: "Landscape",

@@ -8,7 +8,11 @@ export function Footer() {
       <div className="mx-auto grid max-w-7xl gap-10 px-5 py-16 lg:grid-cols-4 lg:px-8">
         <div className="lg:col-span-2">
           <div className="flex items-center gap-3">
-            <img src={site.logo} alt="JH Associates logo" className="size-16 object-contain" />
+            <img
+              src={site.logo}
+              alt="JH Associates logo"
+              className="size-16 rounded-xl border border-border/70 bg-card/80 object-cover p-1.5"
+            />
             <span className="text-sm font-bold uppercase tracking-[0.22em]">{site.name}</span>
           </div>
           <p className="mt-5 max-w-md text-sm leading-relaxed text-muted-foreground">
