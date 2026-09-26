@@ -122,7 +122,7 @@ export const companyOverview = {
 export const services = [
   {
     slug: "architecture",
-    title: "Architecture",
+    title: "Building Design",
     image: img.thePresident,
     short:
       "A blend of imagination and engineering creating timeless residential and commercial structures.",
@@ -130,7 +130,7 @@ export const services = [
   },
   {
     slug: "construction",
-    title: "Construction",
+    title: "Civil Construction",
     image: img.constructionFeature,
     short:
       "Precision civil construction executed with structural durability and premium material integrity.",
@@ -162,14 +162,14 @@ export const services = [
   },
   {
     slug: "3d-house-design",
-    title: "3D House Design",
+    title: "3D Visualization",
     image: img.saiyudHouse,
     short: "Detailed 3D models and photorealistic walkthroughs before a single brick is laid.",
     body: "We create detailed 3D models to bring your vision to life, ensuring every element is planned with precision. Visualize materials, lighting, textures, and spatial flow with total clarity.",
   },
   {
     slug: "business-remodel-planning",
-    title: "Business Remodel Planning",
+    title: "Business Remodeling",
     image: img.urbanOasis,
     short:
       "Strategic corporate remodel planning with minimal disruption to daily office operations.",

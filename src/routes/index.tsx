@@ -53,10 +53,40 @@ export const Route = createFileRoute("/")({
   component: HomePage,
 });
 
+const homeImages = {
+  hero: [
+    "/homes/hero-courtyard.jpg",
+    "/homes/hero-luxury.jpg",
+    "/homes/hero-spanish.jpg",
+    "/homes/hero-villa.jpg",
+  ],
+  feature: "/homes/home-1.jpg",
+  videoPoster: "/homes/home-2.jpg",
+  services: [
+    "/homes/home-3.jpg",
+    "/homes/home-4.jpg",
+    "/homes/home-5.jpg",
+    "/homes/home-1.jpg",
+    "/homes/home-2.jpg",
+    "/homes/home-3.jpg",
+    "/homes/home-4.jpg",
+    "/homes/home-5.jpg",
+  ],
+  projects: [
+    "/homes/home-1.jpg",
+    "/homes/home-2.jpg",
+    "/homes/home-3.jpg",
+    "/homes/home-4.jpg",
+    "/homes/home-5.jpg",
+    "/homes/hero-villa.jpg",
+    "/homes/hero-luxury.jpg",
+  ],
+};
+
 function HeroWordmark() {
   const word = "ASSOCIATES";
   return (
-    <h2 className="flex justify-center gap-[0.06em] overflow-hidden text-[12vw] font-extrabold leading-none tracking-[0.06em] text-transparent sm:text-[8vw] lg:text-[6rem]">
+    <h2 className="flex justify-center gap-[0.06em] overflow-hidden text-[9vw] font-extrabold leading-none tracking-[0.06em] text-transparent lg:text-[8vw] lg:text-[6rem]">
       {word.split("").map((c, i) => (
         <span
           key={`${c}-${i}`}
@@ -85,7 +115,7 @@ function Hero() {
       {heroSlides.map((s, i) => (
         <img
           key={s.title}
-          src={s.image}
+          src={homeImages.hero[i]}
           alt={s.title}
           width={1920}
           height={1280}
@@ -108,7 +138,7 @@ function Hero() {
           </p>
         </div>
 
-        <p className="mt-4 text-7xl font-extrabold leading-none sm:text-8xl">JH</p>
+        <p className="mt-4 text-5xl font-extrabold leading-none lg:text-8xl">JH</p>
         <HeroWordmark />
         <p className="mx-auto mt-2 text-[11px] font-semibold uppercase tracking-[0.5em] text-foreground/85 sm:text-sm">
           Civil & Interior
@@ -190,7 +220,7 @@ function HomePage() {
             intro="See our design philosophy and construction discipline come to life in a short glimpse of the work, teams, and spaces we build with precision."
           />
           <div className="mt-10">
-            <VideoPlayer src={showreelUrl} poster={companyOverview.image} className="mt-2" />
+            <VideoPlayer src={showreelUrl} poster={homeImages.videoPoster} className="mt-2" />
           </div>
         </div>
       </section>
@@ -249,7 +279,7 @@ function HomePage() {
             <Reveal delay={120} className="relative lg:col-span-6">
               <div className="relative overflow-hidden rounded-2xl border border-border/80 bg-card shadow-2xl">
                 <img
-                  src={companyOverview.image}
+                  src={homeImages.feature}
                   alt="JH Associates Team on site"
                   loading="lazy"
                   className="aspect-4/3 w-full object-cover transition-transform duration-700 hover:scale-105"
@@ -290,14 +320,14 @@ function HomePage() {
 
         <div className="mt-12">
           <AutoScroller speed={260}>
-            {services.map((s) => (
+            {services.map((s, i) => (
               <article
                 key={s.slug}
                 className="lit-panel group flex h-full w-[290px] shrink-0 flex-col overflow-hidden rounded-xl border border-border/80 bg-card transition-all duration-300 hover:border-primary/50 hover:shadow-xl sm:w-[360px]"
               >
                 <div className="relative aspect-16/10 w-full overflow-hidden">
                   <img
-                    src={s.image}
+                    src={homeImages.services[i]}
                     alt={s.title}
                     loading="lazy"
                     draggable={false}
@@ -378,7 +408,7 @@ function HomePage() {
         </div>
         <div className="mt-12">
           <AutoScroller speed={180}>
-            {projects.map((p) => (
+            {projects.map((p, i) => (
               <Link
                 key={p.slug}
                 to="/projects/$slug"
@@ -387,7 +417,7 @@ function HomePage() {
               >
                 <div className="relative aspect-4/3 w-full overflow-hidden">
                   <img
-                    src={p.image}
+                    src={homeImages.projects[i]}
                     alt={`${p.title}, ${p.location}`}
                     loading="lazy"
                     draggable={false}

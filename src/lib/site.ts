@@ -65,7 +65,7 @@ export const projects: Project[] = [
   },
   {
     slug: "verdant-metropolis-residence",
-    title: "Verdant Metropolis Residence",
+    title: "Verdant Residence",
     location: "DHA Phase 2, Karachi",
     status: "Completed",
     category: "Architecture",
@@ -76,7 +76,7 @@ export const projects: Project[] = [
   },
   {
     slug: "nordic-harmony-residences",
-    title: "Nordic Harmony Residences",
+    title: "Nordic Residences",
     location: "Bahria Town, Karachi",
     status: "Completed",
     category: "Architecture",
@@ -87,7 +87,7 @@ export const projects: Project[] = [
   },
   {
     slug: "urban-oasis-revitalization",
-    title: "Urban Oasis Revitalization",
+    title: "Urban Oasis",
     location: "PECHS, Karachi",
     status: "Under Construction",
     category: "Commercial",
@@ -98,7 +98,7 @@ export const projects: Project[] = [
   },
   {
     slug: "contemporary-luxury-villa",
-    title: "Contemporary Luxury Villa",
+    title: "Contemporary Villa",
     location: "DHA Phase 6, Karachi",
     status: "Completed",
     category: "Architecture",
@@ -109,7 +109,7 @@ export const projects: Project[] = [
   },
   {
     slug: "commercial-executive-suites",
-    title: "Commercial Executive Suites",
+    title: "Executive Suites",
     location: "Shahrah-e-Faisal, Karachi",
     status: "Completed",
     category: "Commercial",

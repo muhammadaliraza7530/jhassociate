@@ -13,13 +13,13 @@ export function PostsRail() {
           key={`${p.image}-${i}`}
           className="lit-panel flex h-full w-[260px] shrink-0 flex-col overflow-hidden rounded-xl border border-border/80 bg-card transition-all duration-300 hover:border-primary/50 hover:shadow-xl sm:w-[320px]"
         >
-          <div className="aspect-[4/5] w-full overflow-hidden bg-black/60">
+          <div className="aspect-square w-full overflow-hidden bg-black/60">
             <img
               src={p.image}
               alt={`${p.title}, ${p.location}`}
               loading="lazy"
               draggable={false}
-              className="h-full w-full object-cover"
+              className="h-full w-full object-contain"
             />
           </div>
           <div className="flex flex-col p-4 sm:p-5">
