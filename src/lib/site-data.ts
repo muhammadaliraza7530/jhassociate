@@ -1,5 +1,3 @@
-import logoAsset from "@/assets/jh-associates-logo.webp.asset.json";
-
 /**
  * Single source of truth for all site content.
  * Every media file lives in /public and is referenced with an absolute path,
@@ -7,7 +5,7 @@ import logoAsset from "@/assets/jh-associates-logo.webp.asset.json";
  */
 
 export const img = {
-  logo: logoAsset.url,
+  logo: "/logo.webp",
 
   // Photoreal hero / feature photography
   spanishVilla: "/homes/hero-spanish.jpg",

@@ -1,6 +1,5 @@
 import { Link } from "@tanstack/react-router";
 import { ArrowLeft, HardHat } from "lucide-react";
-import logoAsset from "@/assets/jh-associates-logo.webp.asset.json";
 import { Button } from "@/components/ui/button";
 
 type ComingSoonProps = {
@@ -16,7 +15,7 @@ export function ComingSoon({ page, message }: ComingSoonProps) {
 
       <div className="mx-auto w-full max-w-4xl text-center">
         <img
-          src={logoAsset.url}
+          src="/logo.webp"
           alt="JH Associates Civil and Interior"
           className="mx-auto size-28 object-contain sm:size-36"
         />

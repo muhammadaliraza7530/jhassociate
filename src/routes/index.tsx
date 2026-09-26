@@ -6,7 +6,7 @@ import { projects } from "@/lib/site";
 import { Counter, Reveal, SectionHeading } from "@/components/ui-bits";
 import { AutoScroller } from "@/components/AutoScroller";
 import { VideoPlayer } from "@/components/VideoPlayer";
-import { VideoGallery } from "@/components/VideoGallery";
+// import { VideoGallery } from "@/components/VideoGallery";
 import { PostsRail } from "@/components/PostsRail";
 import { TestimonialsRail } from "@/components/Testimonials";
 import { CtaBand } from "@/components/PageBits";
@@ -139,7 +139,8 @@ function HomePage() {
     <>
       <Hero />
 
-      {/* Showreel */}
+      {/*
+      Showreel
       <section className="relative py-16 lg:py-24">
         <div className="mx-auto max-w-6xl px-5 lg:px-8">
           <SectionHeading
@@ -153,6 +154,7 @@ function HomePage() {
           </Reveal>
         </div>
       </section>
+      */}
 
       {/* Stats */}
       <section className="border-y border-border bg-card/30 py-14">
@@ -235,7 +237,8 @@ function HomePage() {
         </div>
       </section>
 
-      {/* Video gallery */}
+      {/*
+      Video gallery
       <section className="py-20 lg:py-28">
         <div className="mx-auto max-w-6xl px-5 lg:px-8">
           <SectionHeading
@@ -247,6 +250,7 @@ function HomePage() {
           <VideoGallery />
         </div>
       </section>
+      */}
 
       {/* Branded posts */}
       <section className="overflow-hidden border-y border-border bg-card/30 py-20 lg:py-28">
